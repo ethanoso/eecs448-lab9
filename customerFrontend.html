@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Ethan Osorio</title>
+			<link rel="stylesheet" type="text/css" href="style.css">
+			<script src="formChecker.js"></script>
+		</head>
+		<body>
+			<div class="header">
+				<h1>Shoe Store</h1>
+			</div>
+			<div id="wrapper">
+				
+				<div class="images">
+					<img src="src/athletic.jfif">
+					<img src="src/dress.jpg">
+					<img src="src/sandal.jpg">
+				</div>
+				
+				<form onsubmit=" return validate()" action="customerBackend.php" method="post">
+					<div id="login">
+						<h3>LOGIN</h3>
+						<label for="user">Email:</label><br>
+						<input type="text" id="user" name="user"><br>
+						<label for="pass">Password:</label><br>
+						<input type="password" id="password" name="password"><br>
+					</div>
+					<div id="products">
+						<label for="quantity1">$75 Athletic Shoes:</label>
+						<input type="number" id="quantity1" name="quantity1" value="0" min="0" max="100"><br>
+						<label for="quantity2">$100 Dress Shoes:</label>
+						<input type="number" id="quantity2" name="quantity2" value="0" min="0" max="100"><br>
+						<label for="quantity3">$45 Sandals:</label>
+						<input type="number" id="quantity3" name="quantity3" value="0" min="0" max="100"><br>
+					</div>
+					<div id="shipping">
+						<p>Shipping Options:</p>
+						<input type="radio" id="ship1" name="shipping" value="0">
+						<label for="ship1">Free 7 day</label><br>
+						<input type="radio" id="ship2" name="shipping" value="50">
+						<label for="ship2">$50.00 over night</label><br>  
+						<input type="radio" id="ship3" name="shipping" value="5">
+						<label for="ship3">$5.00 three day</label><br><br>
+					</div>
+					<input type="reset" value="Reset">
+					<input type="submit">
+				</form>
+			</div>
+		</body>
+	</html>

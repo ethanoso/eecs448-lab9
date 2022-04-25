@@ -1,0 +1,48 @@
+body{
+	display: flex; 
+	flex-direction: column;
+	text-align: center;
+	background: no-repeat center fixed;
+    background-image: linear-gradient(to bottom, rgb(153, 204, 255),  rgb(204, 229, 255));
+    background-size: cover;
+}
+#login{
+	position: absolute;
+    top: 100px;
+    left: 100px;
+	border: 3px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	padding: 25px;
+}
+.images {
+	position: absolute;
+    top: 100px;
+    right: 100px;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(102, 178, 255,);
+    left: 50%;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    z-index: 1;
+}
+#products{
+	font-size: larger;
+}
+#shipping{
+	font-size: larger;
+}
+table, td, th {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding: 8px;
+	background-color: rgba(0,0,0,0.1);
+	margin: auto;
+}
